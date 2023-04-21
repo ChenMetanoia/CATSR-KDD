@@ -1,0 +1,10 @@
+MAX_ITEM_LIST_LENGTH: 50
+data_path: dataset
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+TIME_FIELD: timestamp
+load_col:
+    inter: [user_id, item_id, timestamp]
+    item: [item_id, item_emb]
+ITEM_LIST_LENGTH_FIELD: item_length
+LIST_SUFFIX: _list

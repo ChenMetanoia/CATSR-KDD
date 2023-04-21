@@ -1,0 +1,29 @@
+# model config
+model_name: CATSR
+# MODEL_TYPE: ModelType.SEQUENTIAL
+n_heads: 4
+n_layers: 1
+hidden_size: 64
+inner_size: 256
+eval_step : 10
+
+neg_sampling: ~
+train_neg_sample_args: ~
+hidden_dropout_prob: 0.5
+attn_dropout_prob: 0.5
+hidden_act: gelu
+layer_norm_eps: 1e-12
+initializer_range: 0.02
+train_batch_size: 256
+
+loss_type: CE
+stopping_step: 50
+eval_args:
+   split: {'LS': 'valid_and_test'}
+   group_by: user
+   order: TO
+   mode: full
+metrics: ['MRR', 'NDCG']
+topk: [5, 10, 20]
+valid_metric: MRR@10
+valid_metric_bigger: True
