@@ -13,26 +13,26 @@ transformers==4.18.0
 ```
 
 
-## 1. Download XMRec dataset from https://xmrec.github.io/
+### 1. Download XMRec dataset from https://xmrec.github.io/
 Category: Electronics
 Data: ratings, metadata
 Markets: Canada (ca), Germany (de), Spain (es), France (fr), India (in), Italy (it), Japan (jp), Mexico (mx), United Kingdom (uk), and United States (us)
 
-## 2. Download Amazon reviews dataset from https://nijianmo.github.io/amazon/index.html
+### 2. Download Amazon reviews dataset from https://nijianmo.github.io/amazon/index.html
 Category: Electronics
 Data: metadata
 
-## 3. Process data
+### 3. Process data
 ```
 python data_process.py
 ```
 
-## 4. Pretrain ```us``` market
+### 4. Pretrain ```us``` market
 ```
 python pretrain.py
 ```
 
-## 5. Fine-tune
+### 5. Fine-tune
 We provide pretrained `CATSR-us-200.pth` to quick test fine-tune ```es``` market
 ```
 python finetune.py
