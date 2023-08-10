@@ -96,6 +96,8 @@ if __name__ == "__main__":
     emb_df = pd.read_csv("item_emb.csv")
     
     # generate recbole dataset
+    if not os.path.exists('../dataset'):
+        os.mkdir('../dataset')
     for m in market_list:
         print(f"Generating {m} dataset...")
         df = pd.read_csv(m+'_5core.txt', sep=' ')
