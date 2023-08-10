@@ -13,17 +13,17 @@ transformers==4.18.0
 ```
 
 
-### 1. Download XMRec dataset from https://xmrec.github.io/
-Category: Electronics
-Data: ratings, metadata
-Markets: Canada (ca), Germany (de), Spain (es), France (fr), India (in), Italy (it), Japan (jp), Mexico (mx), United Kingdom (uk), and United States (us)
+### 1. Copy preprocessed XMRec dataset from [FOREC](https://github.com/hamedrab/FOREC/tree/main/DATA/proc_data) or [MA](https://github.com/samarthbhargav/efficient-xmrec/tree/main/DATA2/proc_data)
+put dataset into ```data``` file.
 
-### 2. Download Amazon reviews dataset from https://nijianmo.github.io/amazon/index.html
+### 2. Download Amazon meta dataset from https://nijianmo.github.io/amazon/index.html
 Category: Electronics
 Data: metadata
+put dataset into ```data/Amazon/metadata/meta_Electronics.json.gz``` directory
 
 ### 3. Process data
 ```
+cd data
 python data_process.py
 ```
 
