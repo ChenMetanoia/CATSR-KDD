@@ -41,7 +41,7 @@ if __name__ == '__main__':
     parser.add_argument('--alpha', default=1.2, type=float, help='alpha in WCE')
     parser.add_argument('--beta', default=0.99, type=float, help='beta in WCE')
     parser.add_argument('--loss_type', default='CE', type=str, help='loss type: CE, WCE')
-    parser.add_argument('--dataset', default='es', type=str, help='the source market to pretrain, default is us')
+    parser.add_argument('--dataset', default='ca', type=str, help='the source market to pretrain, default is us')
     parser.add_argument('--gpu_id', default=0, type=int)
     args = parser.parse_args()
     
