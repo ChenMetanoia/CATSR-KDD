@@ -33,7 +33,7 @@ python pretrain.py
 ```
 
 ### 5. Fine-tune
-We provide pretrained `CATSR-us-200.pth` to quick test fine-tune ```es``` market
+Take finetune Canada(ca) as an example
 ```
-python finetune.py
+python finetune.py --dataset ca
 ```
