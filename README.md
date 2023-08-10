@@ -14,12 +14,14 @@ transformers==4.18.0
 
 
 ### 1. Copy preprocessed XMRec dataset from [FOREC](https://github.com/hamedrab/FOREC/tree/main/DATA/proc_data) or [MA](https://github.com/samarthbhargav/efficient-xmrec/tree/main/DATA2/proc_data)
-put dataset into ```data``` file.
+Put data file into ```data``` directory. For example: ```data/ca_5core.txt```
 
 ### 2. Download Amazon meta dataset from https://nijianmo.github.io/amazon/index.html
 Category: Electronics
+
 Data: metadata
-put dataset into ```data/Amazon/metadata/meta_Electronics.json.gz``` directory
+
+Put dataset into ```data/Amazon/metadata``` directory. For example ```data/Amazon/metadata/meta_Electronics.json.gz```
 
 ### 3. Process data
 ```
