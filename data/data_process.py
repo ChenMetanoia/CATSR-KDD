@@ -69,30 +69,30 @@ def generate_item_emb(df, emboutputpath):
 if __name__ == "__main__":
     # load amazon meta data to extract item's text feature
     print("Loading Amazon meta data...")
-    # meta_df = getDF('Amazon/metadata/meta_Electronics.json.gz', 'json')
+    meta_df = getDF('Amazon/metadata/meta_Electronics.json.gz', 'json')
     
     # select the items that are in the market
-    # itemset = set()
-    # print("Selecting items that are in the market...")
+    itemset = set()
+    print("Selecting items that are in the market...")
     market_list = ['ca', 'de', 'fr', 'in', 'jp', 'mx', 'uk', 'us']
-    # for m in market_list:
-    #     df = pd.read_csv(m+'_5core.txt', sep=' ')
-    #     itemset = itemset.union(set(df.itemId.unique()))
+    for m in market_list:
+        df = pd.read_csv(m+'_5core.txt', sep=' ')
+        itemset = itemset.union(set(df.itemId.unique()))
         
-    # selected_meta_df = meta_df[meta_df['asin'].isin(itemset)]
-    # selected_meta_df.drop_duplicates(subset=['asin'], inplace=True)
+    selected_meta_df = meta_df[meta_df['asin'].isin(itemset)]
+    selected_meta_df.drop_duplicates(subset=['asin'], inplace=True)
     
-    # assert len(selected_meta_df) == len(itemset)
+    assert len(selected_meta_df) == len(itemset)
     
-    # # generate item's text feature
-    # selected_meta_df["description"] = selected_meta_df.description.apply(list2str)
-    # selected_meta_df["text_feature"] = selected_meta_df[["title", "description"]].agg(" ".join, axis=1)
+    # generate item's text feature
+    selected_meta_df["description"] = selected_meta_df.description.apply(list2str)
+    selected_meta_df["text_feature"] = selected_meta_df[["title", "description"]].agg(" ".join, axis=1)
 
-    # selected_meta_df = selected_meta_df.drop(columns=["title", "description"])
-    # selected_meta_df = selected_meta_df.reset_index(drop=True)
+    selected_meta_df = selected_meta_df.drop(columns=["title", "description"])
+    selected_meta_df = selected_meta_df.reset_index(drop=True)
     
     # generate item's text embedding
-    # emb_df = generate_item_emb(selected_meta_df, "item_emb.csv")
+    emb_df = generate_item_emb(selected_meta_df, "item_emb.csv")
     emb_df = pd.read_csv("item_emb.csv")
     
     # generate recbole dataset
