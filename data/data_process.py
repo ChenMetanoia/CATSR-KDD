@@ -66,6 +66,7 @@ def generate_item_emb(df, emboutputpath):
     print(f"Done! text embeddings have been saved into: {emboutputpath}")
     return temp
 
+
 if __name__ == "__main__":
     # load amazon meta data to extract item's text feature
     print("Loading Amazon meta data...")
