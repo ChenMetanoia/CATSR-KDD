@@ -22,7 +22,7 @@ eval_args:
    split: {'LS': 'valid_and_test'}
    group_by: user
    order: TO
-   mode: full
+   mode: uni99
 metrics: ['MRR', 'NDCG']
 topk: [5, 10, 20]
 valid_metric: MRR@10
