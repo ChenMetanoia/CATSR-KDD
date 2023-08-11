@@ -16,7 +16,7 @@ transformers==4.18.0
 ### 1. Copy preprocessed XMRec dataset from [FOREC](https://github.com/hamedrab/FOREC/tree/main/DATA/proc_data) or [MA](https://github.com/samarthbhargav/efficient-xmrec/tree/main/DATA2/proc_data)
 Put data file into ```data``` directory. For example: ```data/ca_5core.txt```
 
-### 2. Download Amazon meta dataset from https://nijianmo.github.io/amazon/index.html
+### 2. Download [Amazon meta dataset](https://nijianmo.github.io/amazon/index.html)
 Category: Electronics
 
 Data: metadata
