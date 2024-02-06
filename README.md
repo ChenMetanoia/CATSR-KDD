@@ -1,5 +1,4 @@
 # CAT-SR
-In repo is for RecSys 2023 paper.
 
 ## Requirements
 
