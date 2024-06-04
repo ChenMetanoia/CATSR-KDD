@@ -1,5 +1,16 @@
 # CAT-SR
 
+This is the official PyTorch implementation for the [paper]():
+> Chen Wang, Ziwei Fan, Liangwei Yang, Mingdai Yang, Xiaolong Liu, Zhiwei Liu, Philip Yu. Pre-Training, Sequential Recommendation, Self-Attention, Cross-Market Recommendation. KDD 2024.
+
+---
+
+## Overview
+
+In this study, we introduce the **C**ross-market **A**ttention **T**ransferring with **S**equential **R**ecommendation (**CAT-SR**) framework, tailored specifically for cross-market recommendation (CMR) scenarios. CMR poses unique challenges such as strict privacy regulations that limit data sharing, lack of user overlap, and consistent item sets across different international markets. These aspects are further compounded by market-specific variations in user preferences and item popularity, known as market shifts.
+
+To effectively address these hurdles and enhance recommendation accuracy across disparate markets, CATSR employs a sophisticated approach that leverages a preconditioning strategy focusing on item-item correlations and incorporates an innovative selective self-attention mechanism. This mechanism facilitates the transfer of focused learning across markets. Additionally, the framework enhances adaptability through the integration of query and key adapters, which are designed to capture and adjust to market-specific nuances in user behavior.
+
 ## Requirements
 
 ```
