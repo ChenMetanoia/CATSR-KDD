@@ -1,7 +1,8 @@
 # CAT-SR
 
 This is the official PyTorch implementation for the [paper]():
-> Chen Wang, Ziwei Fan, Liangwei Yang, Mingdai Yang, Xiaolong Liu, Zhiwei Liu, Philip Yu. Pre-Training, Sequential Recommendation, Self-Attention, Cross-Market Recommendation. KDD 2024.
+> Chen Wang, Ziwei Fan, Liangwei Yang, Mingdai Yang, Xiaolong Liu, Zhiwei Liu, Philip Yu. Pre-Training with Transferable Attention for Addressing Market
+Shifts in Cross-Market Sequential Recommendation. KDD 2024.
 
 ---
 
