@@ -1,6 +1,6 @@
 # CAT-SR
 
-This is the official PyTorch implementation for the [paper]():
+This is the official PyTorch implementation for the [paper](https://www.researchgate.net/profile/Chen_Wang423/publication/383117472_Pre-Training_with_Transferable_Attention_for_Addressing_Market_Shifts_in_Cross-Market_Sequential_Recommendation/links/66bd1e86311cbb0949391351/Pre-Training-with-Transferable-Attention-for-Addressing-Market-Shifts-in-Cross-Market-Sequential-Recommendation.pdf):
 > Chen Wang, Ziwei Fan, Liangwei Yang, Mingdai Yang, Xiaolong Liu, Zhiwei Liu, Philip Yu. Pre-Training with Transferable Attention for Addressing Market
 Shifts in Cross-Market Sequential Recommendation. KDD 2024.
 
